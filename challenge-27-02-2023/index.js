@@ -1,16 +1,30 @@
 const expandButton = document.querySelector('.expand-icon-js');
-const container = document.querySelector('.content-js');
-const closeButton = document.querySelector('.close-icon-js');
+const flexContainer = document.querySelector('.flex-js');
+const popUp = document.querySelector('.content-js');
+const menuOpen = document.querySelector('.menu-icon-js');
+const menuContainer = document.querySelector('.menu-open-js');
+const mediaQuery = window.matchMedia('(min-width: 1360px)');
+if (!mediaQuery.matches) {
+  expandButton.addEventListener('mouseover', () => {
+    popUp.classList.add('popup');
+    popUp.style.display = 'block';
+    popUp.innerText = '2450 words'
+    flexContainer.appendChild(popUp);
+  });
 
-
-expandButton.addEventListener('click', () => {
-  const popUp = document.createElement('div');
-  popUp.classList.add('popup');
-  popUp.innerText = '2450 words'
-  closeButton.style.display = 'block';
-  container.appendChild(popUp);
-
-  closeButton.addEventListener('click', () => {
+  expandButton.addEventListener('mouseleave', () => {
     popUp.style.display = 'none';
+  });
+
+  menuOpen.addEventListener('mouseover', () => {
+    menuContainer.style.display = 'block';
   })
-})
+
+  menuContainer.addEventListener('mouseleave', () => {
+    menuContainer.style.display = 'none';
+  })
+} else {
+  return;
+}
+
+
