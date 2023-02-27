@@ -7,7 +7,7 @@
 }
 
 :root {
-  --clr-bg: #2770C6;
+  --clr-accent: #2770C6;
   --font: 'Roboto', sans-serif;
 }
 
@@ -17,8 +17,57 @@
   font-family: var(--font);
 }
 
-.main-title
-
 .header {
-  font-size: 0.9rem;
+  display: flex;
+  margin-top: 1.15em;
+  margin-bottom: 2em;
+}
+hr {
+  color:rgba(0, 0, 0, 0.5);
+  margin-bottom:1.15em;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.home-icon {
+  font-size: 1.15rem;
+  margin-left: 1.15rem;
+}
+
+.main-content {
+  margin-left: 1.15em;
+  margin-right: 1.15em;
+  line-height: 1.6;
+}
+
+.title-paragraph {
+  font-style: italic;
+}
+
+.title-paragraph::first-letter {
+  color:var(--clr-accent);
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+.title-paragraph:last-of-type {
+  margin-bottom: 30px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap:1.125em;
+}
+
+.expand-icon {
+  margin-top: 15px;
+}
+
+.material-symbols-outlined:hover,
+.material-symbols-outlined:focus {
+  color:var(--clr-accent);
 }
