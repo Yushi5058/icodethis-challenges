@@ -67,6 +67,10 @@ hr {
   margin-top: 15px;
 }
 
+.material-symbols-outlined {
+  cursor:pointer;
+}
+
 .material-symbols-outlined:hover,
 .material-symbols-outlined:focus {
   color:var(--clr-accent);
@@ -74,4 +78,16 @@ hr {
 
 .popup {
   border: 1px solid var(--clr-accent);
+  color:rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+.close-icon {
+  display: none;
+  position: absolute;
+  left:300px;
+}
+
+.close-icon:hover {
+  color: rgba(255, 0, 0, 0.5);
 }
