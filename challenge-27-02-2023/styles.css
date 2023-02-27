@@ -15,6 +15,7 @@
   display: grid;
   grid-template-rows: 100px 1fr;
   font-family: var(--font);
+  z-index: 1;
 }
 
 .header {
@@ -32,7 +33,7 @@ hr {
   text-align: center;
 }
 
-.home-icon {
+.menu-icon {
   font-size: 1.15rem;
   margin-left: 1.15rem;
 }
@@ -77,17 +78,65 @@ hr {
 }
 
 .popup {
-  border: 1px solid var(--clr-accent);
-  color:rgba(0, 0, 0, 0.5);
-  display: block;
-}
-
-.close-icon {
   display: none;
-  position: absolute;
-  left:300px;
+  color:rgba(0, 0, 0, 0.5);
+  height: fit-content;
+  margin-top: 10px;
 }
 
-.close-icon:hover {
-  color: rgba(255, 0, 0, 0.5);
+.menu-open {
+  display: none;
+  background-color: white;
+  width: 100%;
+  min-width: 100vw;
+  height: fit-content;
+  z-index: 2;
+}
+
+.menu-links,
+.menu-title {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  text-decoration: none;
+  margin-left: 10px;
+  color:var(--clr-accent);
+}
+
+.menu-links:hover,
+.menu-title:hover {
+  background-color: var(--clr-accent);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.title {
+  text-decoration: underline var(--clr-accent);
+}
+
+.main-title {
+  color: var(--clr-accent);
+}
+
+
+@media ( min-width: 1360px ) {
+  .menu-open {
+    display:block;
+    grid-area: menu-content;
+  }
+  
+  .header {
+    grid-area: header;
+  }
+
+  .main-content {
+    grid-area: main;
+  }
+
+  .main-grid {
+    display: grid;
+    grid-template-areas:
+     ;
+  }
+  
 }
