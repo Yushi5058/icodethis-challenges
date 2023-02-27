@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bg: #2770C6;
+  --font: 'Roboto', sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  font-family: var(--font);
+}
+
+.main-title
+
+.header {
+  font-size: 0.9rem;
+}
