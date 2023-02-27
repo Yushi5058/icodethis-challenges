@@ -71,3 +71,7 @@ hr {
 .material-symbols-outlined:focus {
   color:var(--clr-accent);
 }
+
+.popup {
+  border: 1px solid var(--clr-accent);
+}
