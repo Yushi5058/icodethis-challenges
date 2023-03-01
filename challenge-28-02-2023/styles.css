@@ -13,22 +13,43 @@
   align-items: center;
 }
 
+.content__text {
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  background-color: #A2DD51;
+  color: #fff;
+  font-size: 2rem;
+  width: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin: 0 auto;
+  display: block;
+  outline: transparent;
+  border-radius: 20px;
+  border: transparent;
+  box-shadow: 0 0 50px 0 #C9F1CC;
+}
+
 .card {
   transition: 0.3s;
   width: 400px;
 }
 
-.card__center {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  z-index: 99;
+.card__content {
+  padding-bottom: 20px;
 }
 
-.card__behind {
-  box-shadow: 0px  20px 90px rgba(0,0,0,0.2);
-  z-index: 2;
+.icons {
+  color: #A3DF53;
 }
 
-.card__far-behind {
-  z-index: 1;
-  box-shadow: 0 0 8px 40px rgba(0,0,0,0.2);
+.flex {
+  display: flex;
+  gap: 15px;
 }
