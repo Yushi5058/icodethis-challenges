@@ -11,12 +11,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #7AD9F7;
 }
 
 .content__text {
   line-height: 1.6;
   text-align: center;
   padding: 20px;
+  color: #E7E7E7;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn {
@@ -39,6 +42,11 @@
 .card {
   transition: 0.3s;
   width: 400px;
+  background-color: #FFFFFF ;
+}
+
+.card__center {
+  background: linear-gradient(to right, #F4FDFA 70%, #DAFBF1);
 }
 
 .card__content {
@@ -52,4 +60,9 @@
 .flex {
   display: flex;
   gap: 15px;
+}
+
+.close-icon {
+  color: #595F5D;
+  margin: 0 200px;
 }
