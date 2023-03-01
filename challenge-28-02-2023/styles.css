@@ -48,12 +48,23 @@
 .card {
   box-shadow: 0 0 25px 0 rgba(119, 116, 116, 0.295);
   transition: 0.3s;
-  width: 600px;
   background-color: #FFFFFF ;
 }
 
 .card__center {
   background: linear-gradient(to right, #F4FDFA 70%, #DAFBF1);
+  width: 600px;
+  z-index: 99;
+}
+
+.card__behind {
+  border-top: 20px solid #F6F6F6;
+  width: 550px;
+}
+
+.card__far-behind {
+  border-top: 20px solid #F6F6F6;
+  width: 520px;
 }
 
 .card__content {
