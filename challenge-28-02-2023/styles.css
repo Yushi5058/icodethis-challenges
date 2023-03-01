@@ -18,8 +18,9 @@
   line-height: 1.6;
   text-align: center;
   padding: 20px;
-  color: #E7E7E7;
+  color: #8C8C8C;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.45rem;
 }
 
 .btn {
@@ -37,11 +38,17 @@
   border-radius: 20px;
   border: transparent;
   box-shadow: 0 0 50px 0 #C9F1CC;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(162, 221, 81, 0.5);
 }
 
 .card {
+  box-shadow: 0 0 25px 0 rgba(119, 116, 116, 0.295);
   transition: 0.3s;
-  width: 400px;
+  width: 600px;
   background-color: #FFFFFF ;
 }
 
@@ -55,14 +62,25 @@
 
 .icons {
   color: #A3DF53;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.icons:hover {
+  color: rgba(162, 221, 81, 0.5);
 }
 
 .flex {
   display: flex;
-  gap: 15px;
 }
 
 .close-icon {
   color: #595F5D;
-  margin: 0 200px;
+  margin-top: 20px;
+  margin-left: 420px;
+}
+
+.close-icon:hover {
+  color: rgba(89, 95, 93, 0.5);
 }
