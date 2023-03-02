@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  border-radius: 50px;
+  width: 300px;
+  height: 100px;
+  background-color: #D7D7D7;
+  z-index: 1;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.small-circle {
+  border-radius: 50%;
+  background-color: white;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 20px;
+  z-index:  99;
+}
+
+.circle__black {
+  background-color: #4F4F4F;
+}
+
+.circle__red {
+  background-color: #DF2A5D;
+}
