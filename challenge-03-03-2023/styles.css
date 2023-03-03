@@ -24,6 +24,8 @@
   justify-content: center;
   align-items: center;
   border:2px solid rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px 0 var(--bg-color);
+  margin: 50px 20px 20px 50px;
 }
 
 .main {
@@ -32,6 +34,10 @@
   font-family: var(--ff-style);
 }
 
-
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 500px;
+}
 
 
