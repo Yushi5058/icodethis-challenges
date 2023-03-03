@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-style: 'Tilt Neon', cursive;
+  --bg-color: #F7F7F7;
+  --bg-primary-color: #E36A7D;
+  --text-color: #201D1D;
+}
+
