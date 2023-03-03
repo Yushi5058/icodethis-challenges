@@ -32,15 +32,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border:2px solid rgba(0,0,0,0.3);
-  box-shadow: 0 0 20px 0 var(--bg-color);
-  margin: 50px 20px 20px 50px;
+  border:10px solid transparent;
+  box-shadow: 0 0 10px 0 grey;
+  margin: 50px;
+  z-index: 99;
+  background-color: var(--bg-color);
 }
 
 .main {
   background: var(--bg-color);
-  background: linear-gradient(to top, var(--bg-color) 75%, var(--bg-primary-color) 100%); 
+  background: linear-gradient(-5deg, var(--bg-color) 75%, var(--bg-primary-color) 25%); 
   font-family: var(--ff-style);
+  z-index: 1;
 }
 
 .flex {
