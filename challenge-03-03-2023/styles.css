@@ -89,7 +89,13 @@
   margin-right: 20px;
 }
 
-
+.list__style {
+  border: 1px solid var(--text-color);
+  font-size: 1.01rem;
+  width: fit-content;
+  border-radius: 80%;
+  padding: 7px;
+}
 
 
 
