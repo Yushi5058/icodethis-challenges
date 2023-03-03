@@ -13,10 +13,19 @@
   --text-color: #201D1D;
 }
 
-.icons,
+.icon,
 .main__title,
 .main__subtitle {
   color: var(--bg-color);
+}
+
+.main__subtitle {
+  margin-left: 75px;
+  font-size: 1.15rem;
+}
+
+.main__title {
+  margin-top: 20px;
 }
 
 .main__box {
@@ -38,6 +47,17 @@
   display: flex;
   justify-content: space-between;
   gap: 500px;
+}
+
+.flex--modified {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 2rem !important;
+  margin-left: 30px;
+  margin-top: 25px;
 }
 
 
