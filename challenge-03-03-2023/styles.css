@@ -66,10 +66,27 @@
 .list {
   margin-top: 20px;
   margin-bottom: 20px;
+  list-style-type: none;
 }
 
 .list__items {
   margin-top: 20px;
+  line-height: 1.6;
+}
+
+.song-streams {
+  opacity: 0.4;
+}
+
+.song-artist {
+  opacity: 0.5;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 20px;
 }
 
 
