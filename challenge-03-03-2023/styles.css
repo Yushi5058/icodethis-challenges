@@ -13,3 +13,25 @@
   --text-color: #201D1D;
 }
 
+.icons,
+.main__title,
+.main__subtitle {
+  color: var(--bg-color);
+}
+
+.main__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid rgba(0,0,0,0.3);
+}
+
+.main {
+  background: var(--bg-color);
+  background: linear-gradient(to top, var(--bg-color) 75%, var(--bg-primary-color) 100%); 
+  font-family: var(--ff-style);
+}
+
+
+
+
