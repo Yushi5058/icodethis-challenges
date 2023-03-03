@@ -97,5 +97,23 @@
   padding: 7px;
 }
 
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: var(--bg-color);
+  opacity: 0.2; 
+}
+
+.song-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.song-link:hover {
+  text-decoration: underline;
+}
+
 
 
