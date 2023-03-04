@@ -6,3 +6,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  min-height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  background-color: white;
+}
+
