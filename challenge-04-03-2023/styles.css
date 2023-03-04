@@ -105,5 +105,13 @@
 
 .box__input {
   -moz-appearance: textfield;
+  font-size: 3rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
 }
 
+.box__input:focus,
+.box__input:focus-visible {
+  border-color: #BEC8EB;
+  box-shadow: 0 0 15px 0 #BEC8EB;
+}
