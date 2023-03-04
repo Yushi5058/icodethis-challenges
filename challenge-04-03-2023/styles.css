@@ -8,8 +8,49 @@
 
 .container {
   min-height: 100vh;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.box {
+  border: 2px solid #0E182B;
+  width: 100%;
+  min-width: 300px;
+  box-shadow: 0 0 15px 0 #0E182B;
+}
+
+.box__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.box__text {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.box__input {
+  margin-left: 20px;
+}
+
+.box__mail {
+  z-index: 1;
+  position: relative;
+  bottom: 300px;
+  left: 200px;
+
+}
+
+.box__confirm {
+  background-color: white;
+  position:relative;
+  z-index: 2;
+  right: 100px;
+  top: 150px;
+}
