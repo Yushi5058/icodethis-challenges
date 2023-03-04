@@ -15,8 +15,9 @@
 
 .box {
   border: 2px solid #0E182B;
-  width: 75%;
+  width: 900px;
   box-shadow: 0 0 15px 0 #0E182B;
+  border-radius: 20px;
 }
 
 .box__title {
@@ -28,10 +29,11 @@
 }
 
 .box__text {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .box__input {
@@ -44,7 +46,7 @@
   z-index: 1;
   position: relative;
   bottom: 220px;
-  left: 53px;
+  left: 35px;
 }
 
 .box__confirm {
@@ -83,3 +85,25 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.box__link {
+  text-decoration: none;
+  color: #BEC8EB;
+  cursor: pointer;
+}
+
+.box__link:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 225, 0.4);
+}
+
+.box__input::-webkit-outer-spin-button,
+.box__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.box__input {
+  -moz-appearance: textfield;
+}
+
