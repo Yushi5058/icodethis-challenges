@@ -15,8 +15,7 @@
 
 .box {
   border: 2px solid #0E182B;
-  width: 100%;
-  min-width: 300px;
+  width: 80%;
   box-shadow: 0 0 15px 0 #0E182B;
 }
 
@@ -37,6 +36,8 @@
 
 .box__input {
   margin-left: 20px;
+  width: 50px;
+  height: 75px;
 }
 
 .box__mail {
@@ -53,4 +54,23 @@
   z-index: 2;
   right: 100px;
   top: 150px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.bg-grey {
+  background-color: #F0F1F7;
+}
+
+.box__number {
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 5rem;
+  opacity: 0.4;
+  letter-spacing: 5px;
 }
