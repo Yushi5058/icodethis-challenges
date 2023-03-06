@@ -13,3 +13,25 @@
   --clr-accent: #EB6649;
 }
 
+.main {
+  background-color: white;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--clr-text-light)
+}
