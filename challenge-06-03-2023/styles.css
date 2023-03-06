@@ -17,6 +17,7 @@
 .img {
   width: 250px;
   height: 250px;
+  object-fit: fill;
 }
 
 .list {
@@ -64,5 +65,10 @@
   margin-bottom: 15px;
   color: var(--clr-text-light);
   font-style: italic;
+}
+
+.icons {
+  color: var(--clr-text-light);
+  font-size: 1.15rem;
 }
 
