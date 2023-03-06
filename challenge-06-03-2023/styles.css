@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #F1EADD;
+  --clr-text: #3C3C3C;
+  --clr-text-light: #8E8C86;
+  --clr-accent: #EB6649;
+}
+
