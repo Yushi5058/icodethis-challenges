@@ -13,13 +13,6 @@
   --clr-accent: #EB6649;
 }
 
-.main {
-  background-color: white;
-  width: 40vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .img {
   width: 250px;
@@ -45,5 +38,31 @@
 
 .list__links:hover {
   background-color: var(--clr-primary);
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  border: 2px solid #F0F0F0;
+  text-align: center;
+  line-height: 1.5;
+  width: 255px;
+}
+
+.card__title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--clr-text);
+}
+
+.card__date {
+  margin-bottom: 15px;
+  color: var(--clr-text-light);
+  font-style: italic;
 }
 
