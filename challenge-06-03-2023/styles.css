@@ -35,3 +35,15 @@
   margin-bottom: 20px;
   color: var(--clr-text-light)
 }
+
+.list__links {
+  text-decoration: none;
+  padding: 10px;
+  color: var(--clr-text-light);
+  cursor: pointer;
+}
+
+.list__links:hover {
+  background-color: var(--clr-primary);
+}
+
