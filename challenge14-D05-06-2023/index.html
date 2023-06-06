@@ -8,55 +8,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <nav>
-        <ul>
-            <li>Products <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                </svg>
-            </li>
-            <li>Collections</li>
-            <li>Gifts</li>
-            <li>Our magazine</li>
-        </ul>
-        <ul>
-            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                </svg>
-            </li>
-            <li>Log in</li>
-            <li>Sign up</li>
-        </ul>
-    </nav>
-    <img src="https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-        alt="abstract art background">
-    <div>
-        <h1>The gift of happiness</h1>
-        <p>Show your gratitude with one of our gift sets, large and small,
-            specially designed to spread joy to someone you love.</p>
-        <button>Shop now</button>
-    </div>
-    <div>
-        <h1>Ready for autumn collection</h1>
-        <p>Treat yourself to some of our brand new autumn
-            collection - all with the wonderful colours surrounding you.
-        </p>
-        <button>purchase now</button>
-        <img src="https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-            alt="abstract art image">
-    </div>
-    <div>
-        <h1>Ready for autumn collection</h1>
-        <p>Treat yourself to some of our brand new autumn
-            collection - all with the wonderful colours surrounding you.</p>
-        <button>purchase now</button>
-        <img src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
-            alt="abstract art image">
-    </div>
+<body class="flex justify-center items-center min-h-screen bg-gradient-to-b from-red-300 to-orange-300">
+    <div class="flex flex-col justify-center w-fit bg-gradient-to-b from-white to-slate-300">
+        <nav class="flex justify-between p-10">
+            <ul class="flex gap-10">
+                <div class="flex font-bold">
+                    <li><a href="#">Products</a></li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
 
+                </div>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Gifts</a></li>
+                <li class="mr-60"><a href="#">Our magazine</a></li>
+            </ul>
+            <ul class="flex gap-10">
+                <a href="">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                </a>
+                </li>
+                <li><button>Log in</button></li>
+                <li><button
+                        class="border-2 rounded-full border-transparent text-white bg-gradient-to-r from-red-300 to-orange-300 px-2 uppercase">Sign
+                        up</button>
+                </li>
+            </ul>
+        </nav>
+        <div
+            style="background-image: url('https://plus.unsplash.com/premium_photo-1669751999588-3459ce85921d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhbm5lciUyMGFic3RyYWN0JTIwYXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'); height: 400px;">
+            <div
+                class="flex flex-col justify-center items-center text-white border-2 border-transparent bg-slate-500 w-fit my-24 mx-auto p-4">
+                <h1 class="text-4xl mb-2 font-bold text-center">The gift of happiness</h1>
+                <p class="text-center">Show your gratitude with one of our gift sets, large and small,</p>
+                <p class="text-center">specially designed to spread joy to someone you love.</p>
+                <button
+                    class="uppercase border-2 rounded-full border-transparent text-white bg-gradient-to-r from-red-300 to-orange-300 w-fit px-2 mt-6">Shop
+                    now</button>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 m-8">
+            <div class="border-2 border-transparent bg-white w-fit text-center">
+                <h1 class="font-bold text-2xl mb-4">Ready for autumn collection</h1>
+                <p>Treat yourself to some of our brand new autumn</p>
+                <p> collection - all with the wonderful colours surrounding you.
+                </p>
+                <button class="mb-4 uppercase border-2 border-black p-2 rounded-full font-bold mt-4">purchase now</button>
+                <div
+                    style="background-image: url('https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'); height:400px;">
+                </div>
+                </div>
+                <div class="border-2 border-transparent bg-white w-fit text-center">
+                    <h1 class="font-bold text-2xl mb-4">Ready for autumn collection</h1>
+                    <p>Treat yourself to some of our brand new autumn</p>
+                    <p>collection - all with the wonderful colours surrounding you.</p>
+                    <button class="mb-4 uppercase border-2 border-black p-2 rounded-full font-bold mt-4">purchase now</button>
+                    <div
+                        style="background-image: url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80'); height:400px;">
+                    </div>
+                </div>
+            </div>
 </body>
 
 </html>
