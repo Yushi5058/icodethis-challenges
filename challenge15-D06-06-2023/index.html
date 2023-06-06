@@ -8,51 +8,65 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div>
-        <div>
-            <h1>New message</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </div>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-            </svg>
-            <input type="search" required placeholder="Type to search">
-        </div>
-        <h1>Recent conversations</h1>
-        <div>
-            <div>
+<body class="flex justify-center items-center min-h-screen bg-slate-200">
+    <div class="p-10 bg-slate-300 rounded">
+        <div class="flex flex-col justify-center  bg-white p-8 w-96 rounded shadow-md">
+            <div class="flex justify-between gap-40 mb-4">
+                <h1 class="font-bold text-lg">New message</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 text-slate-400 cursor-pointer hover:text-slate-700">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <div
+                class="flex gap-8 border-2 border-gray-200 p-4 rounded hover:outline hover:outline-slate-700 bg-slate-200">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 text-slate-400">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+                <input type="search" class="outline-none bg-slate-200" required placeholder="Type to search">
+            </div>
+            <h1 class="mt-8 font-bold text-sm uppercase mb-4">Recent conversations</h1>
+            <div class="flex items-center mb-6 justify-between">
                 <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                    alt="red-hair girl">
-                <h1>David Jacobsen</h1>
-                <p>@dav_id</p>
-                <input type="radio">
+                    alt="red-hair girl" class="w-16 h-16 rounded-full object-cover">
+                <div class="flex flex-col">
+                    <h1 class="font-bold">David Jacobsen</h1>
+                    <p>@dav_id</p>
+                </div>
+                <input type="radio"
+                    class="w-6 h-6 appearance-none border-2 rounded-full border-gray-300 checked:bg-blue-500">
             </div>
-            <div>
-                <img src="https://unsplash.com/fr/photos/c_GmwfHBDzk" alt="man with beard and long hair">
-                <h1>Christy Riccio</h1>
-                <p>@christy-ric</p>
-                <input type="radio">
+            <div class="flex items-center mb-6 justify-between">
+                <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    alt="man with beard and long hair" class="w-16 h-16 rounded-full object-cover">
+                <div class="flex flex-col">
+                    <h1 class="font-bold">Christy Riccio</h1>
+                    <p>@christy-ric</p>
+                </div>
+                <input type="radio"
+                    class="w-6 h-6 checked:bg-blue-500 appearance-none border-2 rounded-full border-gray-300">
             </div>
-            <div>
+            <div class="flex items-center mb-6 justify-between">
                 <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                    alt="bald man with long beard">
-                <h1>James Lowther</h1>
-                <p>@james_lowther</p>
-                <input type="radio" checked>
+                    alt="bald man with long beard" class="w-16 h-16 rounded-full object-cover">
+                <div class="flex flex-col">
+                    <h1 class="font-bold">James Lowther</h1>
+                    <p>@james_lowther</p>
+                </div>
+                <input type="radio" checked
+                    class="w-6 h-6 checked:bg-blue-500 appearance-none border-2 rounded-full border-gray-300">
             </div>
-            <div>
+            <div class="flex items-center mb-6 justify-between">
                 <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                    alt="girl with freckles">
-                <h1>Danica Dogett</h1>
-                <p>@dani-dani-d</p>
-                <input type="radio">
+                    alt="girl with freckles" class="w-16 h-16 rounded-full object-cover">
+                <div class="flex flex-col">
+                    <h1 class="font-bold">Danica Dogett</h1>
+                    <p>@dani-dani-d</p>
+                </div>
+                <input type="radio"
+                    class="w-6 h-6 checked:bg-blue-500 appearance-none border-2 rounded-full border-gray-300">
             </div>
         </div>
     </div>
