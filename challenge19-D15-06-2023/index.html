@@ -8,43 +8,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-        <input type="text">
-        <div>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-300">
+    <div class="flex mb-10">
+        <div class="flex gap-4 shadow-lg border-2 border-transparent rounded p-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
+                stroke="currentColor" class="w-6 h-6 cursor-pointer hover:opacity-60">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <input type="text" placeholder="Search"
+                class="outline-none border-2 border-transparent rounded hover:border-blue-400 pl-2">
+        </div>
+        <div class="border-2 border-transparent bg-blue-400 p-4 rounded cursor-pointer hover:opacity-60">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-white mt-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
         </div>
     </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-        <input type="text">
-        <div>
+    <div class="flex">
+        <div class="flex gap-4 shadow-lg border-2 border-transparent rounded p-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
+                stroke="currentColor" class="w-6 h-6 cursor-pointer hover:opacity-60">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <input type="text" placeholder="Search"
+                class="outline-none border-2 border-transparent rounded hover:border-blue-400 pl-2">
+        </div>
+        <div class="border-2 border-transparent bg-blue-400 p-4 rounded cursor-pointer hover:opacity-60">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-white mt-1.5">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
         </div>
     </div>
-<div>
-    <input type="checkbox" name="articles" id="articles">
-    <label for="articles">Articles</label>
-    <input type="checkbox" name="products" id="products" checked>
-    <label for="products">Products</label>
-    <input type="checkbox" name="services" id="services">
-    <label for="services">Services</label>
-</div>
+    <div class="flex flex-col border-2 border-transparent shadow-lg rounded p-8 mr-48">
+        <div class="flex gap-4">
+            <input type="checkbox" name="articles" id="articles" class="border-2 border-gray-400 rounded checked:bg-blue-400">
+            <label for="articles">Articles</label>
+        </div>
+        <div class="flex gap-4">
+            <input type="checkbox" name="products" id="products" checked class="border-2 border-gray-400 rounded checked:bg-blue-400">
+            <label for="products">Products</label>
+        </div>
+        <div class="flex gap-4">
+            <input type="checkbox" name="services" id="services" class="border-2 border-gray-400 rounded check:bg-blue-400">
+            <label for="services">Services</label>
+        </div>
+    </div>
 </body>
 
 </html>
