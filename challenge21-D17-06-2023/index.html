@@ -5,13 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
          <script src="https://cdn.tailwindcss.com"></script>
-         <script src="script.js"></script>
     </head>
     <body class="flex items-center justify-center min-h-screen bg-[#191C37] text-white">
         <div class="flex flex-col items-center justify-center bg-[#191C37] shadow-2xl p-10 border-2 border-transparent rounded gap-6 m-4">
             <h1 class="text-[#4D516F] text-md">Drag and drop your <span class="text-md font-bold text-white">.json</span> file</h1>
             <p class="text-md text-[#4D516F] uppercase">or</p>
-            <label for="file" class="text-white text-md cursor-pointer p-4 border-2 border-transparent rounded bg-[#0087FF]">Select files to upload</label>
+            <label for="files" id="files" class="text-white text-md cursor-pointer p-4 border-2 border-transparent rounded bg-[#0087FF]">Select files to upload</label>
             <input type="file" class="hidden" accept=".json">
         </div>
     </body>
