@@ -6,35 +6,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
-<body>
-    <div>
+
+<body class="flex items-center justify-center min-h-screen bg-slate-200 text-white">
+    <div class="rounded border-2 border-transparent shadow-lg p-10 bg-center bg-no-repeat bg-cover"
+        style="background-image: url(https://images.unsplash.com/photo-1549880181-56a44cf4a9a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdW50YWlufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);">
         <nav>
-            <ul>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">My List</a></li>
-                <li><a href="#">Manage Trips</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#">Create Account</a></li>
+            <ul class="flex justify-end gap-4 font-semibold mt-2">
+                <li><a href="#" class="hover:underline">Account</a></li>
+                <li><a href="#" class="hover:underline">My List</a></li>
+                <li><a href="#" class="hover:underline">Manage Trips</a></li>
+                <li><a href="#" class="hover:underline">Support</a></li>
+                <li><a href="#" class="hover:underline">Log In</a></li>
+                <li><a href="#"
+                        class="cursor-pointer border-2 border-transparent rounded p-2 bg-yellow-500 hover:bg-yellow-700 mr-6">Create
+                        Account</a></li>
             </ul>
         </nav>
-        <h1>Explore the World</h1>
-        <p>One of the keys to reaching your goals is to eliminate any escape routes. It is tempting to retreat to safety
-            and</p>
-        <p>comfort when challenges and difficulties arise. To avoid turning around and abandoning your goals, you must
-        </p>
-        <p>make going forward more compelling then going back.</p>
-        <div>
+        <h1 class="font-bold text-4xl mb-4 mt-20 flex justify-center items-center">Explore the World</h1>
+        <div class="text-center">
+            <p>One of the keys to reaching your goals is to eliminate any escape routes. It is tempting to retreat to
+                safety
+                and</p>
+            <p>comfort when challenges and difficulties arise. To avoid turning around and abandoning your goals, you
+                must
+            </p>
+            <p>make going forward more compelling then going back.</p>
+        </div>
+        <div class="flex justify-center items-center">
+        <div class="flex border-2 bg-gray-500/50 border-transparent p-2 mt-10 text-white font-semibold rounded">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
+                stroke="currentColor" class="w-8 h-8 font-bold mr-2">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
             </svg>
-            <input type="search" placeholder="Enter country, city or adress">
-            <button>Search</button>
+            <input type="search" placeholder="Enter country, city or adress" class="outline-none bg-transparent">
+        </div>
+            <button class="border-2 h-fit py-3 px-1.5 border-transparent bg-blue-500 cursor-pointer hover:bg-blue-700 mt-10 rounded">Search</button>
         </div>
     </div>
-
 </body>
 
 </html>
