@@ -8,40 +8,48 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div>
-        <h1>2 Announcements</h1>
-        <div>
-            <div>
-                <p>Ms. Philips is away this week. I am going to replace her.</p>
+<body class="flex justify-center items-center min-h-screen bg-gradient-to-r from-slate-700 to-yellow-500">
+    <div class="border-2 border-transparent rounded bg-slate-600 shadow-md p-4">
+        <h1 class="text-white text-2xl mb-4 ml-4">2 Announcements</h1>
+        <div class="border-2 border-transparent rounded bg-slate-800 p-4 mb-6">
+            <div class="flex justify-between p-2">
+                <p class="text-white ml-6 text-lg">Ms. Philips is away this week. I am
+                    <br>
+                    going to replace her.
+                </p>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="w-8 h-8 text-slate-600">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                 </svg>
             </div>
-            <div>
+            <div class="flex items-center gap-2">
                 <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                    alt="man with beard">
-                <p>Hettie Marshall</p>
-                <p>2 hours ago</p>
+                    alt="man with beard" class="w-10 h-10 border-2 border-slate-400 rounded-full">
+                <p class="text-slate-600 font-semibold">Hettie Marshall</p>
+                <p class="text-slate-600 ml-48">2 hours ago</p>
             </div>
         </div>
-        <div>
-            <p>Bring your books! We will read the next 2 chapters.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-            </svg>
+        <div class="border-2 border-transparent rounded bg-slate-800 p-4 mb-20">
+            <div class="flex justify-between p-2">
+                <p class="text-white ml-6 text-lg">Bring your books! We will read the
+                    <br>
+                    next 2 chapters.
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8 text-slate-600">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    alt="man with beard" class="w-10 h-10 border-2 border-slate-400 rounded-full">
+                <p class="text-slate-600 font-semibold">Hettie Marshall</p>
+                <p class="text-slate-600 ml-48">3 hours ago</p>
+            </div>
         </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                alt="man with beard">
-            <p>Hettie Marshall</p>
-            <p>3 hours ago</p>
-        </div>
-        <button>Dismiss All</button>
+        <button class="cursor-pointer border-2 border-transparent rounded px-4 py-2 bg-blue-500 text-white font-semibold hover:bg-blue-700 flex m-auto">Dismiss All</button>
     </div>
 </body>
 
